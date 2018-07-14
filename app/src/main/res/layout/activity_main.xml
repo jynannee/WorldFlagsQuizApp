@@ -1,0 +1,574 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:src="@drawable/flaglogo" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Select the country for the flag displayed."
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#000000" />
+
+
+        <ImageView
+            android:id="@+id/namibia_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:src="@drawable/namibia" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/indonesia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Indonesia"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/andorra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Andorra"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/el_salvador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="El Salvador"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/namibia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Namibia"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#000000" />
+
+
+        <ImageView
+            android:id="@+id/south_korea_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:src="@drawable/southkorea" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/south_korea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="South Korea"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/thailand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thailand"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/ukraine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ukraine"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/nigeria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nigeria"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#000000" />
+
+
+        <ImageView
+            android:id="@+id/mexico_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:src="@drawable/mexico" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/botswana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Botswana"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/guatemala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Guatemala"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mexico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mexico"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/denmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Denmark"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#000000" />
+
+
+        <ImageView
+            android:id="@+id/norway_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:src="@drawable/norway" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/japan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Japan"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/slovenia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Slovenia"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/norway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Norway"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/iran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Iran"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#000000" />
+
+
+        <ImageView
+            android:id="@+id/austrailia_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:src="@drawable/australia" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tanzania"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tanzania"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/australia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Australia"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/malta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Malta"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/the_united_kingdom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="The United Kingdom"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#000000" />
+
+
+        <ImageView
+            android:id="@+id/jordan_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:src="@drawable/jordan" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/jordan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Jordan"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/paraguay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Paraguay"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/saudi_arabia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Saudi Arabia"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/morocco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Morocco"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#000000" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:text="Enter the name of the country for the flag displayed."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/italyAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Enter country here"
+            android:inputType="textMultiLine" />
+
+
+        <ImageView
+            android:id="@+id/italy_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:src="@drawable/italy" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="30dp"
+            android:background="#000000" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:text="Which two countries have non-rectangular flags?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <CheckBox
+            android:id="@+id/nepal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nepal"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <CheckBox
+            android:id="@+id/latvia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latvia"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <CheckBox
+            android:id="@+id/switzerland"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switzerland"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <CheckBox
+            android:id="@+id/samoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samoa"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <CheckBox
+            android:id="@+id/mozambique"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mozambique"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <CheckBox
+            android:id="@+id/france"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="France"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="30dp"
+            android:background="#000000" />
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Submit Answers"
+            android:onClick="submitScore"/>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="30dp"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/score_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="Your final score is:" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text=" " />
+
+
+    </LinearLayout>
+
+</ScrollView>
