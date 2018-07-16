@@ -539,8 +539,8 @@
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
             android:gravity="center"
-            android:text="Submit Answers"
-            android:onClick="submitScore"/>
+            android:onClick="submitScore"
+            android:text="Submit Answers" />
 
 
         <View
@@ -557,7 +557,7 @@
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
             android:gravity="center_horizontal"
-            android:text="Your final score is:" />
+            android:text="" />
 
         <TextView
             android:id="@+id/score"

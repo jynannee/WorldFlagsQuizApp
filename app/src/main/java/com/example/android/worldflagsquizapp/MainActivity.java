@@ -2,6 +2,7 @@ package com.example.android.worldflagsquizapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -12,25 +13,12 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
 
-    RadioButton namibia;
-    RadioButton south_korea;
-    RadioButton mexico;
-    RadioButton norway;
-    RadioButton australia;
-    RadioButton jordan;
-    EditText italyAnswer;
-    CheckBox irregularFlags;
-
-
-    int finalScore = 0;
-    Button submit;
+    private int finalScore = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        italyAnswer = (EditText) this.findViewById(R.id.italyAnswer);
 
     }
 
@@ -129,69 +117,65 @@ public class MainActivity extends AppCompatActivity {
      * Answer: Italy
      */
 
-    private String italy() {
+    private void italy() {
         EditText editCountry = (EditText) findViewById(R.id.italyAnswer);
         String textValue = editCountry.getText().toString();
-        if (textValue.equalsIgnoreCase("italy")) {
+        if (textValue.equalsIgnoreCase("italy"))
             finalScore = finalScore + 1;
-            displayScore(finalScore);
-        }
-
-
-        /**
-         * Question 8 -- Which two countries have non-rectangular flags?
-         * Answers: Nepal and Switzerland.
-         */
-
-        private void irregularFlags () {
-            CheckBox Nepal = (CheckBox) findViewById(R.id.nepal);
-            CheckBox Latvia = (CheckBox) findViewById(R.id.latvia);
-            CheckBox Switzerland = (CheckBox) findViewById(R.id.switzerland);
-            CheckBox Samoa = (CheckBox) findViewById(R.id.samoa);
-            CheckBox Mozambique = (CheckBox) findViewById(R.id.mozambique);
-            CheckBox France = (CheckBox) findViewById(R.id.france);
-            boolean nepalChecked = Nepal.isChecked();
-            boolean latviaChecked = Latvia.isChecked();
-            boolean switzerlandChecked = Switzerland.isChecked();
-            boolean samoaChecked = Samoa.isChecked();
-            boolean mozambiqueChecked = Mozambique.isChecked();
-            boolean franceChecked = France.isChecked();
-
-            if (nepalChecked && !latviaChecked && switzerlandChecked && !samoaChecked && !mozambiqueChecked && !franceChecked) {
-                finalScore = finalScore + 1;
-                displayScore(finalScore);
-            }
-
-
-            /** Checks for the correct answers.
-             */
-
-            private void checkAnswers () {
-                namibia();
-                south_korea();
-                mexico();
-                norway();
-                australia();
-                jordan();
-                italy();
-                irregularFlags();
-            }
-
-
-            /** Method called after pressing submit button.
-             */
-            public void submitScore (View v;){
-                displayScore(finalScore);
-            }
-
-
-            /** Display score after pressing submit button.
-             */
-            public void displayScore ( int finalScore){
-                TextView scoreMessage = (TextView) findViewById(R.id.score_message);
-                scoreMessage.setText(String.valueOf(finalScore));
-
-            }
-
-        }
+        displayScore(finalScore);
     }
+
+
+    /**
+     * Question 8 -- Which two countries have non-rectangular flags?
+     * Answers: Nepal and Switzerland.
+     */
+
+    private void irregularFlags() {
+        CheckBox Nepal = (CheckBox) findViewById(R.id.nepal);
+        CheckBox Latvia = (CheckBox) findViewById(R.id.latvia);
+        CheckBox Switzerland = (CheckBox) findViewById(R.id.switzerland);
+        CheckBox Samoa = (CheckBox) findViewById(R.id.samoa);
+        CheckBox Mozambique = (CheckBox) findViewById(R.id.mozambique);
+        CheckBox France = (CheckBox) findViewById(R.id.france);
+        boolean nepalChecked = Nepal.isChecked();
+        boolean latviaChecked = Latvia.isChecked();
+        boolean switzerlandChecked = Switzerland.isChecked();
+        boolean samoaChecked = Samoa.isChecked();
+        boolean mozambiqueChecked = Mozambique.isChecked();
+        boolean franceChecked = France.isChecked();
+
+        if (nepalChecked && !latviaChecked && switzerlandChecked && !samoaChecked && !mozambiqueChecked && !franceChecked)
+            finalScore = finalScore + 1;
+        displayScore(finalScore);
+    }
+
+
+    /**
+     * Method called after pressing submit button.
+     */
+    public void submitScore(View v) {
+        displayScore(finalScore);
+
+
+        namibia();
+        south_korea();
+        mexico();
+        norway();
+        australia();
+        jordan();
+        italy();
+        irregularFlags();
+    }
+
+
+    /**
+     * Display score after pressing submit button.
+     */
+    public void displayScore(int finalScore) {
+        TextView scoreMessage = (TextView) findViewById(R.id.score_message);
+        scoreMessage.setText(String.valueOf(finalScore));
+
+    }
+
+}
