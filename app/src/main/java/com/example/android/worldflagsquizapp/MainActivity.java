@@ -8,6 +8,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView name = (TextView) findViewById(R.id.indonesia);
+        name.setText("Indonesia");
+
 
     }
 
@@ -33,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         boolean selectNamibia = radioNamibia.isChecked();
         if (selectNamibia) {
             finalScore += 1;
-            displayScore(finalScore);
         }
     }
 
@@ -48,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         boolean selectSouthKorea = radioSouthKorea.isChecked();
         if (selectSouthKorea) {
             finalScore += 1;
-            displayScore(finalScore);
+
         }
     }
 
@@ -62,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         boolean selectMexico = radioMexico.isChecked();
         if (selectMexico) {
             finalScore += 1;
-            displayScore(finalScore);
+
         }
     }
 
@@ -77,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         boolean selectNorway = radioNorway.isChecked();
         if (selectNorway) {
             finalScore += 1;
-            displayScore(finalScore);
+
         }
     }
 
@@ -92,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         boolean selectAustralia = radioAustralia.isChecked();
         if (selectAustralia) {
             finalScore += 1;
-            displayScore(finalScore);
+
         }
     }
 
@@ -107,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         boolean selectJordan = radioJordan.isChecked();
         if (selectJordan) {
             finalScore += 1;
-            displayScore(finalScore);
+
         }
     }
 
@@ -119,10 +123,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void italy() {
         EditText editCountry = (EditText) findViewById(R.id.italyAnswer);
-        String textValue = editCountry.getText().toString();
+        String textValue = editCountry.getText().toString().trim();
         if (textValue.equalsIgnoreCase("italy"))
             finalScore = finalScore + 1;
-        displayScore(finalScore);
+
     }
 
 
@@ -147,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (nepalChecked && !latviaChecked && switzerlandChecked && !samoaChecked && !mozambiqueChecked && !franceChecked)
             finalScore = finalScore + 1;
-        displayScore(finalScore);
+
     }
 
 
@@ -155,8 +159,6 @@ public class MainActivity extends AppCompatActivity {
      * Method called after pressing submit button.
      */
     public void submitScore(View v) {
-        displayScore(finalScore);
-
 
         namibia();
         south_korea();
@@ -166,16 +168,21 @@ public class MainActivity extends AppCompatActivity {
         jordan();
         italy();
         irregularFlags();
+        displayScore();
     }
-
 
     /**
-     * Display score after pressing submit button.
+     * Display score as toast after pressing submit button.
      */
-    public void displayScore(int finalScore) {
-        TextView scoreMessage = (TextView) findViewById(R.id.score_message);
-        scoreMessage.setText(String.valueOf(finalScore));
+
+
+    private void displayScore() {
+        Toast.makeText(getApplicationContext(), "Your final score is: " + finalScore,
+                Toast.LENGTH_LONG).show();
+
+        finalScore = 0;
 
     }
-
 }
+
+

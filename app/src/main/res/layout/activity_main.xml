@@ -16,557 +16,279 @@
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:adjustViewBounds="true"
-            android:src="@drawable/flaglogo" />
+            style="@style/mainImageStyle" />
 
         <TextView
             android:id="@+id/question"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/logo"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:text="Select the country for the flag displayed."
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            style="@style/quizQuestionMain"
+            android:text="Select the country for the flag displayed." />
 
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="3dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:background="#000000" />
+        <View style="@style/dividerStyle" />
 
 
         <ImageView
             android:id="@+id/namibia_flag"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
-            android:adjustViewBounds="true"
-            android:padding="10dp"
+            style="@style/flagStyle"
             android:src="@drawable/namibia" />
 
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <RadioGroup style="@style/radioGroupStyle">
 
             <RadioButton
                 android:id="@+id/indonesia"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Indonesia"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText" />
 
             <RadioButton
                 android:id="@+id/andorra"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Andorra"
-                android:textAppearance="?android:textAppearanceSmall" />
-
-        </RadioGroup>
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                style="@style/answerText"
+                android:text="Andorra" />
 
             <RadioButton
                 android:id="@+id/el_salvador"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="El Salvador"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="El Salvador" />
 
             <RadioButton
                 android:id="@+id/namibia"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Namibia"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="Namibia" />
         </RadioGroup>
 
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="3dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:background="#000000" />
+        <View style="@style/dividerStyle" />
 
 
         <ImageView
             android:id="@+id/south_korea_flag"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
-            android:adjustViewBounds="true"
-            android:padding="10dp"
+            style="@style/flagStyle"
             android:src="@drawable/southkorea" />
 
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <RadioGroup style="@style/radioGroupStyle">
 
             <RadioButton
                 android:id="@+id/south_korea"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="South Korea"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="South Korea" />
 
             <RadioButton
                 android:id="@+id/thailand"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Thailand"
-                android:textAppearance="?android:textAppearanceSmall" />
-
-        </RadioGroup>
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                style="@style/answerText"
+                android:text="Thailand" />
 
             <RadioButton
                 android:id="@+id/ukraine"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Ukraine"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="Ukraine" />
 
             <RadioButton
                 android:id="@+id/nigeria"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Nigeria"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="Nigeria" />
         </RadioGroup>
 
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="3dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:background="#000000" />
+        <View style="@style/dividerStyle" />
 
 
         <ImageView
             android:id="@+id/mexico_flag"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
-            android:adjustViewBounds="true"
-            android:padding="10dp"
+            style="@style/flagStyle"
             android:src="@drawable/mexico" />
 
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <RadioGroup style="@style/radioGroupStyle">
 
             <RadioButton
                 android:id="@+id/botswana"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Botswana"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="Botswana" />
 
             <RadioButton
                 android:id="@+id/guatemala"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Guatemala"
-                android:textAppearance="?android:textAppearanceSmall" />
-        </RadioGroup>
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                style="@style/answerText"
+                android:text="Guatemala" />
 
             <RadioButton
                 android:id="@+id/mexico"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Mexico"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="Mexico" />
 
             <RadioButton
                 android:id="@+id/denmark"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Denmark"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="Denmark" />
         </RadioGroup>
 
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="3dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:background="#000000" />
+        <View style="@style/dividerStyle" />
 
 
         <ImageView
             android:id="@+id/norway_flag"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
-            android:adjustViewBounds="true"
-            android:padding="10dp"
+            style="@style/flagStyle"
             android:src="@drawable/norway" />
 
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <RadioGroup style="@style/radioGroupStyle">
 
             <RadioButton
                 android:id="@+id/japan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Japan"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="Japan" />
 
             <RadioButton
                 android:id="@+id/slovenia"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Slovenia"
-                android:textAppearance="?android:textAppearanceSmall" />
-
-        </RadioGroup>
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                style="@style/answerText"
+                android:text="Slovenia" />
 
             <RadioButton
                 android:id="@+id/norway"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Norway"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="Norway" />
 
             <RadioButton
                 android:id="@+id/iran"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Iran"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="Iran" />
         </RadioGroup>
 
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="3dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:background="#000000" />
+        <View style="@style/dividerStyle" />
 
 
         <ImageView
             android:id="@+id/austrailia_flag"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
-            android:adjustViewBounds="true"
-            android:padding="10dp"
+            style="@style/flagStyle"
             android:src="@drawable/australia" />
 
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <RadioGroup style="@style/radioGroupStyle">
 
             <RadioButton
                 android:id="@+id/tanzania"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Tanzania"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="Tanzania" />
 
             <RadioButton
                 android:id="@+id/australia"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Australia"
-                android:textAppearance="?android:textAppearanceSmall" />
-
-        </RadioGroup>
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                style="@style/answerText"
+                android:text="Australia" />
 
             <RadioButton
                 android:id="@+id/malta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Malta"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="Malta" />
 
             <RadioButton
                 android:id="@+id/the_united_kingdom"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="The United Kingdom"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="The United Kingdom" />
         </RadioGroup>
 
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="3dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:background="#000000" />
+        <View style="@style/dividerStyle" />
 
 
         <ImageView
             android:id="@+id/jordan_flag"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
-            android:adjustViewBounds="true"
-            android:padding="10dp"
+            style="@style/flagStyle"
             android:src="@drawable/jordan" />
 
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <RadioGroup style="@style/radioGroupStyle">
 
             <RadioButton
                 android:id="@+id/jordan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Jordan"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="Jordan" />
 
             <RadioButton
                 android:id="@+id/paraguay"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Paraguay"
-                android:textAppearance="?android:textAppearanceSmall" />
-
-
-        </RadioGroup>
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
+                style="@style/answerText"
+                android:text="Paraguay" />
 
             <RadioButton
                 android:id="@+id/saudi_arabia"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Saudi Arabia"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="Saudi Arabia" />
 
             <RadioButton
                 android:id="@+id/morocco"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Morocco"
-                android:textAppearance="?android:textAppearanceSmall" />
+                style="@style/answerText"
+                android:text="Morocco" />
         </RadioGroup>
 
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="3dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:background="#000000" />
+        <View style="@style/dividerStyle" />
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginTop="16dp"
-            android:adjustViewBounds="true"
-            android:text="Enter the name of the country for the flag displayed."
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            style="@style/quizQuestionMain"
+            android:text="Enter the name of the country for the flag displayed." />
 
         <EditText
             android:id="@+id/italyAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:hint="Enter country here"
-            android:inputType="textMultiLine" />
+            style="@style/editTextAnswer"
+
+            android:hint="Enter country here" />
 
 
         <ImageView
             android:id="@+id/italy_flag"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
-            android:adjustViewBounds="true"
-            android:padding="10dp"
+            style="@style/flagStyle"
             android:src="@drawable/italy" />
 
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="3dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="30dp"
-            android:background="#000000" />
+        <View style="@style/dividerStyle" />
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            style="@style/quizQuestionMain"
             android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:adjustViewBounds="true"
-            android:text="Which two countries have non-rectangular flags?"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:text="Which two countries have non-rectangular flags?" />
 
 
         <CheckBox
             android:id="@+id/nepal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nepal"
-            android:textAppearance="?android:textAppearanceSmall" />
+            style="@style/answerText"
+            android:text="Nepal" />
 
         <CheckBox
             android:id="@+id/latvia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Latvia"
-            android:textAppearance="?android:textAppearanceSmall" />
+            style="@style/answerText"
+            android:text="Latvia" />
 
         <CheckBox
             android:id="@+id/switzerland"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Switzerland"
-            android:textAppearance="?android:textAppearanceSmall" />
+            style="@style/answerText"
+            android:text="Switzerland" />
 
         <CheckBox
             android:id="@+id/samoa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Samoa"
-            android:textAppearance="?android:textAppearanceSmall" />
+            style="@style/answerText"
+            android:text="Samoa" />
 
         <CheckBox
             android:id="@+id/mozambique"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mozambique"
-            android:textAppearance="?android:textAppearanceSmall" />
+            style="@style/answerText"
+            android:text="Mozambique" />
 
         <CheckBox
             android:id="@+id/france"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="France"
-            android:textAppearance="?android:textAppearanceSmall" />
+            style="@style/answerText"
+            android:text="France" />
 
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="3dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="30dp"
-            android:background="#000000" />
+        <View style="@style/dividerStyle" />
 
 
         <Button
             android:id="@+id/submit"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
+            style="@style/submitStyle"
             android:onClick="submitScore"
             android:text="Submit Answers" />
-
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="3dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="30dp"
-            android:background="#000000" />
-
-        <TextView
-            android:id="@+id/score_message"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:gravity="center_horizontal"
-            android:text="" />
-
-        <TextView
-            android:id="@+id/score"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:gravity="center_horizontal"
-            android:text=" " />
 
 
     </LinearLayout>
