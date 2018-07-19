@@ -3,7 +3,6 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
 
-
         <!-- Main theme. -->
         <item name="colorPrimary">#448AFF</item>
         <item name="colorPrimaryDark">#448AFF</item>
@@ -11,7 +10,6 @@
         <item name="android:background">#ffca28</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
-
     </style>
 
     <!-- Style for main images. -->
@@ -25,7 +23,6 @@
         <item name="android:adjustViewBounds">true</item>
     </style>
 
-
     <!-- Style for written question texts. -->
     <style name="quizQuestionMain">
         <item name="android:layout_width">match_parent</item>
@@ -37,14 +34,12 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-
     <!-- Style for radio group. -->
     <style name="radioGroupStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
     </style>
-
 
     <!-- Style for answer text -->
     <style name="answerText">
@@ -57,7 +52,6 @@
         <item name="android:buttonTint">#000000</item>
     </style>
 
-
     <!-- Style for EditText answer -->
     <style name="editTextAnswer">
         <item name="android:layout_width">match_parent</item>
@@ -67,7 +61,6 @@
         <item name="android:textColor">#212121</item>
         <item name="android:backgroundTint">#000000</item>
     </style>
-
 
     <!-- Style for flag images. -->
     <style name="flagStyle">
@@ -80,7 +73,6 @@
         <item name="android:background">#000000</item>
     </style>
 
-
     <!-- Style for divider. -->
     <style name="dividerStyle">
         <item name="android:layout_width">fill_parent</item>
@@ -90,7 +82,6 @@
         <item name="android:background">#BDBDBD</item>
     </style>
 
-
     <!-- Style for submit button. -->
     <style name="submitStyle">
         <item name="android:layout_width">match_parent</item>
@@ -99,6 +90,5 @@
         <item name="android:layout_marginBottom">150dp</item>
         <item name="android:layout_gravity">center</item>
     </style>
-
 
 </resources>

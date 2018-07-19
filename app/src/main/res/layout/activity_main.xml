@@ -13,7 +13,6 @@
         android:paddingTop="16dp"
         tools:context=".MainActivity">
 
-
         <ImageView
             android:id="@+id/logo"
             style="@style/mainImageStyle" />
@@ -21,275 +20,249 @@
         <TextView
             android:id="@+id/question"
             style="@style/quizQuestionMain"
-            android:text="Select the country for the flag displayed." />
-
+            android:text="@string/main_quiz_question" />
 
         <View style="@style/dividerStyle" />
-
 
         <ImageView
             android:id="@+id/namibia_flag"
             style="@style/flagStyle"
             android:src="@drawable/namibia" />
 
-
         <RadioGroup style="@style/radioGroupStyle">
 
             <RadioButton
                 android:id="@+id/indonesia"
-                style="@style/answerText" />
+                style="@style/answerText"
+                android:text="@string/indonesia" />
 
             <RadioButton
                 android:id="@+id/andorra"
                 style="@style/answerText"
-                android:text="Andorra" />
+                android:text="@string/andorra" />
 
             <RadioButton
                 android:id="@+id/el_salvador"
                 style="@style/answerText"
-                android:text="El Salvador" />
+                android:text="@string/el_salvador" />
 
             <RadioButton
                 android:id="@+id/namibia"
                 style="@style/answerText"
-                android:text="Namibia" />
+                android:text="@string/namibia" />
         </RadioGroup>
 
-
         <View style="@style/dividerStyle" />
-
 
         <ImageView
             android:id="@+id/south_korea_flag"
             style="@style/flagStyle"
             android:src="@drawable/southkorea" />
 
-
         <RadioGroup style="@style/radioGroupStyle">
 
             <RadioButton
                 android:id="@+id/south_korea"
                 style="@style/answerText"
-                android:text="South Korea" />
+                android:text="@string/south_korea" />
 
             <RadioButton
                 android:id="@+id/thailand"
                 style="@style/answerText"
-                android:text="Thailand" />
+                android:text="@string/thailand" />
 
             <RadioButton
                 android:id="@+id/ukraine"
                 style="@style/answerText"
-                android:text="Ukraine" />
+                android:text="@string/ukraine" />
 
             <RadioButton
                 android:id="@+id/nigeria"
                 style="@style/answerText"
-                android:text="Nigeria" />
+                android:text="@string/nigeria" />
         </RadioGroup>
 
-
         <View style="@style/dividerStyle" />
-
 
         <ImageView
             android:id="@+id/mexico_flag"
             style="@style/flagStyle"
             android:src="@drawable/mexico" />
 
-
         <RadioGroup style="@style/radioGroupStyle">
 
             <RadioButton
                 android:id="@+id/botswana"
                 style="@style/answerText"
-                android:text="Botswana" />
+                android:text="@string/botswana" />
 
             <RadioButton
                 android:id="@+id/guatemala"
                 style="@style/answerText"
-                android:text="Guatemala" />
+                android:text="@string/guatemala" />
 
             <RadioButton
                 android:id="@+id/mexico"
                 style="@style/answerText"
-                android:text="Mexico" />
+                android:text="@string/mexico" />
 
             <RadioButton
                 android:id="@+id/denmark"
                 style="@style/answerText"
-                android:text="Denmark" />
+                android:text="@string/denmark" />
         </RadioGroup>
 
-
         <View style="@style/dividerStyle" />
-
 
         <ImageView
             android:id="@+id/norway_flag"
             style="@style/flagStyle"
             android:src="@drawable/norway" />
 
-
         <RadioGroup style="@style/radioGroupStyle">
 
             <RadioButton
                 android:id="@+id/japan"
                 style="@style/answerText"
-                android:text="Japan" />
+                android:text="@string/japan" />
 
             <RadioButton
                 android:id="@+id/slovenia"
                 style="@style/answerText"
-                android:text="Slovenia" />
+                android:text="@string/slovenia" />
 
             <RadioButton
                 android:id="@+id/norway"
                 style="@style/answerText"
-                android:text="Norway" />
+                android:text="@string/norway" />
 
             <RadioButton
                 android:id="@+id/iran"
                 style="@style/answerText"
-                android:text="Iran" />
+                android:text="@string/iran" />
         </RadioGroup>
 
-
         <View style="@style/dividerStyle" />
-
 
         <ImageView
             android:id="@+id/austrailia_flag"
             style="@style/flagStyle"
             android:src="@drawable/australia" />
 
-
         <RadioGroup style="@style/radioGroupStyle">
 
             <RadioButton
                 android:id="@+id/tanzania"
                 style="@style/answerText"
-                android:text="Tanzania" />
+                android:text="@string/tanzania" />
 
             <RadioButton
                 android:id="@+id/australia"
                 style="@style/answerText"
-                android:text="Australia" />
+                android:text="@string/australia" />
 
             <RadioButton
                 android:id="@+id/malta"
                 style="@style/answerText"
-                android:text="Malta" />
+                android:text="@string/malta" />
 
             <RadioButton
                 android:id="@+id/the_united_kingdom"
                 style="@style/answerText"
-                android:text="The United Kingdom" />
+                android:text="@string/the_united_kingdom" />
         </RadioGroup>
 
-
         <View style="@style/dividerStyle" />
-
 
         <ImageView
             android:id="@+id/jordan_flag"
             style="@style/flagStyle"
             android:src="@drawable/jordan" />
 
-
         <RadioGroup style="@style/radioGroupStyle">
 
             <RadioButton
                 android:id="@+id/jordan"
                 style="@style/answerText"
-                android:text="Jordan" />
+                android:text="@string/jordan" />
 
             <RadioButton
                 android:id="@+id/paraguay"
                 style="@style/answerText"
-                android:text="Paraguay" />
+                android:text="@string/paraguay" />
 
             <RadioButton
                 android:id="@+id/saudi_arabia"
                 style="@style/answerText"
-                android:text="Saudi Arabia" />
+                android:text="@string/saudi_arabia" />
 
             <RadioButton
                 android:id="@+id/morocco"
                 style="@style/answerText"
-                android:text="Morocco" />
+                android:text="@string/morocco" />
         </RadioGroup>
-
 
         <View style="@style/dividerStyle" />
 
-
         <TextView
             style="@style/quizQuestionMain"
-            android:text="Enter the name of the country for the flag displayed." />
+            android:text="@string/edit_text_question" />
 
         <EditText
             android:id="@+id/italyAnswer"
             style="@style/editTextAnswer"
-
-            android:hint="Enter country here" />
-
+            android:hint="@string/enter_country_here"
+            android:textColorHint="#757575" />
 
         <ImageView
             android:id="@+id/italy_flag"
             style="@style/flagStyle"
             android:src="@drawable/italy" />
 
-
         <View style="@style/dividerStyle" />
-
 
         <TextView
             style="@style/quizQuestionMain"
             android:layout_marginBottom="16dp"
-            android:text="Which two countries have non-rectangular flags?" />
-
+            android:text="@string/check_box_question" />
 
         <CheckBox
             android:id="@+id/nepal"
             style="@style/answerText"
-            android:text="Nepal" />
+            android:text="@string/nepal" />
 
         <CheckBox
             android:id="@+id/latvia"
             style="@style/answerText"
-            android:text="Latvia" />
+            android:text="@string/latvia" />
 
         <CheckBox
             android:id="@+id/switzerland"
             style="@style/answerText"
-            android:text="Switzerland" />
+            android:text="@string/switzerland" />
 
         <CheckBox
             android:id="@+id/samoa"
             style="@style/answerText"
-            android:text="Samoa" />
+            android:text="@string/samoa" />
 
         <CheckBox
             android:id="@+id/mozambique"
             style="@style/answerText"
-            android:text="Mozambique" />
+            android:text="@string/mozambique" />
 
         <CheckBox
             android:id="@+id/france"
             style="@style/answerText"
-            android:text="France" />
-
+            android:text="@string/france" />
 
         <View style="@style/dividerStyle" />
-
 
         <Button
             android:id="@+id/submit"
             style="@style/submitStyle"
             android:onClick="submitScore"
-            android:text="Submit Answers" />
-
+            android:text="@string/submit_button_text" />
 
     </LinearLayout>
 
