@@ -82,7 +82,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">75dp</item>
         <item name="android:layout_marginTop">16dp</item>
-        <item name="android:layout_marginBottom">150dp</item>
+        <item name="android:layout_marginBottom">175dp</item>
         <item name="android:layout_gravity">center</item>
     </style>
 

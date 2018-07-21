@@ -1,6 +1,7 @@
 <resources>
+    <!-- Strings for Quiz App. -->
     <string name="app_name">World Flags Quiz App</string>
-    <string name="main_quiz_question">Select the country for the flag displayed.</string>
+    <string name="main_quiz_question">Select the country \n for the flag displayed.</string>
     <string name="indonesia">Indonesia</string>
     <string name="andorra">Andorra</string>
     <string name="el_salvador">El Salvador</string>
@@ -25,9 +26,9 @@
     <string name="paraguay">Paraguay</string>
     <string name="saudi_arabia">Saudi Arabia</string>
     <string name="morocco">Morocco</string>
-    <string name="edit_text_question">Enter the name of the country for the flag displayed.</string>
+    <string name="edit_text_question">Enter the name of the country \n for the flag displayed.</string>
     <string name="enter_country_here">Enter country here</string>
-    <string name="check_box_question">Which two countries have non-rectangular flags?</string>
+    <string name="check_box_question">Which two countries have \n non-rectangular flags?</string>
     <string name="nepal">Nepal</string>
     <string name="latvia">Latvia</string>
     <string name="switzerland">Switzerland</string>
@@ -35,4 +36,14 @@
     <string name="mozambique">Mozambique</string>
     <string name="france">France</string>
     <string name="submit_button_text">Submit Answers</string>
+
+    <!-- Strings for contentDescription. -->
+    <string name="flags_of_the_world">Flags of the World Quiz</string>
+    <string name="namibia_flag_image">Blue, red, green diagonally striped flag with yellow sun in blue stripe.</string>
+    <string name="south_korea_flag_image">White flag with red and blue yin and yang in center and four black trigrams.</string>
+    <string name="mexico_flag_image">Flag with three equally sized vertical stripes of green, white and red with national coat of arms in the center of the white stripe.</string>
+    <string name="norway_flag_image">Red flag with an indigo blue Scandinavian cross bordered in white.</string>
+    <string name="australia_flag_image">Blue flag with a Blue Ensign, Commonwealth Star and the five stars of the Southern Cross.</string>
+    <string name="jordan_flag_image">Flag with horizontal black, white, and green bands that are connected by a red chevron.</string>
+    <string name="italy_flag_image">Flag with three equally sized vertical stripes of green, white and red.</string>
 </resources>

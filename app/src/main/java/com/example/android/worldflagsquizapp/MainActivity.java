@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
      * Display score as toast after pressing submit button.
      */
     private void displayScore() {
-        Toast.makeText(getApplicationContext(), "Your final score is: " + finalScore, Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Your final score is: " + finalScore + " out of 8 questions correctly answered!", Toast.LENGTH_LONG).show();
         finalScore = 0;
     }
 }
